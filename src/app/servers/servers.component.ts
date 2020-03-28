@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 username = 'joe';
+disable = false;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+updateUser(){
+  this.username = '';
+}
 }
